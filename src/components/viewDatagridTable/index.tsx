@@ -1,9 +1,17 @@
 import {DataGrid} from "devextreme-react";
+import {TViewDatagridTableProps} from "./types";
+import 'devextreme/dist/css/dx.light.css';
 
-export function ViewDatagridTable () {
+export function ViewDatagridTable (props: TViewDatagridTableProps) {
   return (
-    <DataGrid>
-
-    </DataGrid>
+    <div>
+      <p>DataGrid Table</p>
+      <DataGrid
+        dataSource={props.items}
+        keyExpr='id'
+        columnAutoWidth={true}
+      >
+      </DataGrid>
+    </div>
   )
 }

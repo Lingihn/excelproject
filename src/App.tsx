@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
 //Components
-import {ViewHtmlTable} from "./components/viewHtmlTable";
-import {ViewDatagridTable} from "./components/viewDatagridTable";
+import {Navigation} from "./components/navigation";
 
 function App() {
   return (
     <>
-      <ViewHtmlTable/>
-      <ViewDatagridTable/>
+      <Navigation/>
     </>
   )
 }
